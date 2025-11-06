@@ -1,9 +1,9 @@
 {
   "builds": [
-    { "src": "dist/**", "use": "@vercel/static" }
+    { "src": "dist/public/**", "use": "@vercel/static" }
   ],
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/public/.*", "dest": "/index.html" }
+    { "src": "/.*", "dest": "/index.html" }
   ]
 }
